@@ -66,15 +66,8 @@ plugins:
   - serverless-plugin-warmup
 
 custom:
-  serverless-offline-ssm-provider:
-    file: src/config/${opt:stage, self:provider.stage}.config.env
   webpackIncludeModules: true
-  apigwBinary:
-    types:
-      - 'application/octet-stream'
-      - 'application/zip'
-      - 'image/png'
-      - 'image/jpeg'
+
   warmup:
     enabled: false
     folderName: '_warmup'
