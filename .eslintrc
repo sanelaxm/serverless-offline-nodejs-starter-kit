@@ -1,0 +1,48 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+
+  "env": {
+    "amd": true,
+    "node": true
+  },
+
+  "plugins": [
+    "import",
+    "node",
+    "promise",
+    "standard"
+  ],
+
+  "globals": {
+    "document": false,
+    "navigator": false,
+    "window": false
+  },
+
+  "rules": {
+    // indentation
+    "indent": [ "error", 2 ],
+
+    // commas
+    "comma-dangle": [ 2,"never" ],
+
+    // spacing
+    "space-in-parens": [ 2, "always" ],
+    "template-curly-spacing": [ 2, "always" ],
+    "array-bracket-spacing": [ 2, "always" ],
+    "object-curly-spacing": [ 2, "always" ],
+    "computed-property-spacing": [ 2, "always" ],
+    "no-multiple-empty-lines": [ 2, { "max": 1, "maxEOF": 0, "maxBOF": 0 } ],
+
+    // strings
+    "quotes": [ 2, "single", "avoid-escape" ],
+
+    // code arrangement
+    "no-use-before-define": [ 2, { "functions": false } ],
+    "prefer-const": 1,
+    "complexity": [ 1, 15 ]
+  }
+}

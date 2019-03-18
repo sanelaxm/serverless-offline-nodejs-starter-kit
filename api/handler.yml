@@ -1,0 +1,17 @@
+registerNewUser:
+  handler: src/handler.handler
+  events:
+    - http:
+        path: api/v1/handler
+        method: POST
+        cors: true
+        request:
+          parameters:
+            application/json: >
+              {
+               "type":"object",
+                 "properties": {
+                   "name": {"type": "string"}
+                  }
+              }
+        authorizer: authorizeUser

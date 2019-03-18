@@ -1,0 +1,7 @@
+.webpack
+.serverless
+.idea/*
+node_modules
+.DS_Store
+src/config/*.config.env
+_warmup
